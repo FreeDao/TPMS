@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity" >
+
+    <!-- 告警数据层 -->
+
+    <GridView
+        android:id="@+id/gv_tireData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dip"
+        android:background="@color/transparent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="@drawable/grid_item_transparent_bg"
+        android:numColumns="2"
+        android:padding="0dip"
+        android:stretchMode="columnWidth" />
+
+    <!-- 虚线层 -->
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="0dip"
+        android:background="#5FFF"
+        android:padding="0dip" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_centerVertical="true"
+        android:layout_margin="0dip"
+        android:background="#5FFF"
+        android:padding="0dip" />
+    <!-- 告警文字显示层 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_alarm_left_front"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <com.naruto.tpms.app.weight.MarqueeTextView
+                    android:id="@+id/tv_alarm_left_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginRight="40dip"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="#F00"
+                    android:text="测试告警信息啊啊啊啊 啊啊啊地方阿斯多夫"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_alarm_right_front"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <com.naruto.tpms.app.weight.MarqueeTextView
+                    android:id="@+id/tv_alarm_right_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="40dip"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="测试告警信息342313241234啊啊啊啊 啊啊啊地方阿斯多夫"
+                    android:textColor="#F00"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_alarm_left_rear"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <com.naruto.tpms.app.weight.MarqueeTextView
+                    android:id="@+id/tv_alarm_left_rear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginRight="40dip"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="1111测试告警12343信息342313241234啊啊啊啊 啊啊啊地方阿斯多夫"
+                    android:textColor="#F00"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_alarm_right_rear"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <com.naruto.tpms.app.weight.MarqueeTextView
+                    android:id="@+id/tv_alarm_right_rear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="40dip"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="aaaaa1111测试告警12343信息342313241234啊啊啊啊 啊啊啊地方阿斯多夫"
+                    android:textColor="#F00"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/car" />
+
+    <!-- <com.naruto.tpms.app.weight.MarqueeTextView -->
+    <!-- android:id="@+id/tv_tire_alarm" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerInParent="true" -->
+    <!-- android:layout_margin="250dip" -->
+    <!-- android:ellipsize="marquee" -->
+    <!-- android:focusable="true" -->
+    <!-- android:focusableInTouchMode="true" -->
+    <!-- android:gravity="center" -->
+    <!--  -->
+    <!-- android:marqueeRepeatLimit="marquee_forever" -->
+    <!-- android:scrollHorizontally="true" -->
+    <!-- android:singleLine="true" -->
+    <!-- android:text="屏幕中间滚动的文字，关gridView什么事情？" -->
+    <!-- android:textColor="#F00" -->
+    <!-- android:textSize="18sp" /> -->
+
+</RelativeLayout>

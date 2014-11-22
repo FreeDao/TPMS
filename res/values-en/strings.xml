@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="empty"></string>
+    <string name="app_name">TPMS</string>
+    <string name="app_version">V1.2.1</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_summary">TPMS</string>
+    <string name="bind_bluetooth">Bind bluetooth device</string>
+    <string name="alarm_switch">alarm switch</string>
+    <string name="language_setting">language</string>
+    <string name="pressure_unit">presure unit</string>
+    <string name="temperature_unit">temprature unit</string>
+    <string name="language_chinese">chinese</string>
+    <string name="pressure_unit_kpa">KPa</string>
+    <string name="pressure_unit_bar">Bar</string>
+    <string name="pressure_unit_psi">Psi</string>
+    <string name="pressure_unit_kg">kg</string>
+    <string name="temperature_unit_c">°C</string>
+    <string name="temperature_unit_f">°F</string>
+    <string name="no_bluetooth_bind">None</string>
+    <string name="warn_on">alarm is on</string>
+    <string name="setting_language">set Language</string>
+    <string name="comm_ok">OK</string>
+    <string name="comm_cancel">Cancel</string>
+    <string name="comm_loading">Loading&#8230;&#8230;&#8230;</string>
+    <string name="high_pressure">Pressure alarm high limit</string>
+    <string name="low_pressure">Pressure alarm low limit</string>
+    <string name="high_temprature">Temprature alarm high limit</string>
+    <string name="msg_tire_switch_success">Tire switch success</string>
+    <string name="msg_tire_study_success">%1$sID study success</string>
+    <!-- <string name="action_control">控制</string> -->
+    <string name="ask_to_bind">Haven\'t bind a bluetooth device, whether binding bluetooth device now?</string>
+    <string name="go_to_bind">Now the binding</string>
+    <string name="do_not_bind">No binding</string>
+    <string name="msg_tips">Prompt</string>
+    <string name="auto_boot">Auto start</string>
+
+    <string-array name="local_names">
+        <item >Follow system</item>
+        <item>简体中文</item>
+        <item>繁體中文</item>
+        <item>English</item>
+    </string-array>
+    
+    <string name="menu">Menu</string>
+    <string name="alarm_voice_switch">Alarm sound switch</string>
+    <string name="keep_screen_switch">Keep screen on</string>
+    <string name="comm_back">Back</string>
+    <string name="msg_press_back_again_to_exit">Again according to the exit</string>
+    <string name="msg_state_connected">(Connected)</string>
+    <string name="msg_state_connecting">(Connecting&#8230;)</string>
+    <string name="msg_state_connect_fail">(Connect fail)</string>
+    <string name="msg_state_connect_lost">(Connect lost)</string>
+    <string name="msg_connecting">Connecting&#8230;</string>
+    <string name="msg_studying">Learning&#8230;</string>
+    <string name="msg_study_cancel">Learn canceled</string>
+    <string name="msg_switching">Exchanging&#8230;</string>
+    <string name="msg_study_command_send_fail">Send learn command fail</string>
+    <string name="msg_study_success">ID learn success</string>
+    <string name="msg_switch_success">Tire exchange success</string>
+    <string name="tips_connect_fail">The connection fails, click on the title bar try again</string>
+    <string name="tips_connect_lost">Connection has been disconnected, click on the title bar reconnection</string>
+    <string name="tips_click_tire_start_study">Click on the corresponding tire begin to learn</string>
+    <string name="tips_click_tire_start_switch">Choose two tyres</string>
+    <string name="mode_study">ID learn mode</string>
+    <string name="mode_switch">Exchange mode</string>
+    <string name="mode_watch">Monitoring mode</string>
+    <string name="msg_choose_mode">Please choose to do</string>
+    <string name="item_study">ID learn mode</string>
+    <string name="item_switch">Exchange mode</string>
+    <string name="tip_alarm_on">The alarm sound has been opened</string>
+    <string name="tip_alarm_off">The alarm sound has been closed</string>
+    <string name="alarm_leak">Leak</string>
+    <string name="alarm_low_battery">Low power</string>
+    <string name="alarm_signal_error">No signal</string>
+    <string name="alarm_high_pressure">High pressure</string>
+    <string name="alarm_low_pressure">Low pressure</string>
+    <string name="alarm_high_temprature">High temperature</string>
+    <string name="msg_want_switch">Exchange for %1$s and %2$s?</string>
+    <string name="give_up_study">Give up learning</string>
+    <string name="msg_connect_success">The connection is successful</string>
+    <string name="msg_studying_tire_id">Is learning to tire ID, please in 4 minutes to %1$s.</string>
+    <string name="visible">visible,</string>
+    <string name="paired">paired</string>
+    <string name="unpaired">unpaired</string>
+    <string name="lab_signal_strength">,signal strength:</string>
+    <string name="signal_strong">strong</string>
+    <string name="signal_general">general</string>
+    <string name="signal_weak">weak</string>
+    <string name="do_not_bind_device">Don\'t bind any bluetooth device</string>
+    <string name="re_scan_devices">Rescan bluetooth devices</string>
+    <string name="l_f_tire">F.L</string>
+    <string name="r_f_tire">F.R</string>
+    <string name="l_r_tire">R.L</string>
+    <string name="r_r_tire">R.R</string>
+    
+     <!-- 20140218新增begin -->
+    <string name="exit">Exit</string>
+    <string name="msg_run_in_background">TPMS is run at background,you can exit from menu</string>
+    <string name="msg_device_not_bind">bluetooth device is not bind</string>
+    <string name="msg_bluetooth_closed">bluetooth is closed</string>
+    <string name="msg_n_tire_alarming"> alarm(s)</string>
+    <string name="msg_connect_fail">connect fail</string>
+    <string name="msg_connect_lost">connect lost</string>
+    <string name="msg_tpms_running">TPMS is running</string>
+     <!-- 20140218新增end-->
+    
+    <string-array name="tires_names">
+        <item >F.L</item>
+        <item >F.R</item>
+        <item >R.L</item>
+        <item >R.R</item>
+    </string-array>
+
+</resources>

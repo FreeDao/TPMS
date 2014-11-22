@@ -1,0 +1,48 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowTitleSize">45dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/customTitlebg</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <style name="customTitlebg">
+        <item name="android:background">@drawable/title_bg</item>
+    </style>
+    <!-- 信息展示界面文字样式 -->
+    <style name="lab_info">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 设置项水平分割线 -->
+    <style name="settings_item_horizontal_devider">
+        <item name="android:background">@color/settings_item_divider_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/split_one_dip</item>
+    </style>
+    <style name="select_radio">
+        <item name="android:layout_width">50dip</item>
+        <item name="android:layout_height">30dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+<!--         <item name="android:textColor">@color/text_gray_color_b3b3b3</item> -->
+    </style>
+
+</resources>

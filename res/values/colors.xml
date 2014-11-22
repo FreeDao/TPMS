@@ -1,0 +1,13 @@
+<resources>
+
+    <color name="transparent">#0000</color>
+    <color name="red">#F00</color>
+    <color name="logo_color">#009ee0</color>
+    <color name="alarm_color">#4F00</color>
+    <color name="select_color">#500F</color>
+    <color name="item_pressed">#500F</color>
+    <color name="black">#000</color>
+    <color name="text_gray_color_b3b3b3">#ffb3b3b3</color>
+    <color name="settings_item_divider_color">#ffe0e0dc</color>
+	<color name="blue">#6950be</color>
+</resources>

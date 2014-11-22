@@ -1,0 +1,465 @@
+com.naruto.tpms.app.BTService -> com.naruto.tpms.app.a:
+    java.util.UUID MY_UUID -> a
+    android.os.Handler handler -> b
+    android.bluetooth.BluetoothAdapter mAdapter -> c
+    int mState -> d
+    com.naruto.tpms.app.BTService$ConnectThread mConnectThread -> e
+    com.naruto.tpms.app.BTService$ConnectedThread mConnectedThread -> f
+    int getState() -> a
+    void setState(int) -> a
+    void connect(android.bluetooth.BluetoothDevice) -> a
+    void connected(android.bluetooth.BluetoothDevice,android.bluetooth.BluetoothSocket) -> a
+    void start() -> d
+    void stop() -> b
+    boolean sendMsg(byte[]) -> a
+    android.os.Handler access$0(com.naruto.tpms.app.BTService) -> a
+    void access$1(com.naruto.tpms.app.BTService) -> b
+    java.util.UUID access$2() -> c
+    android.bluetooth.BluetoothAdapter access$3(com.naruto.tpms.app.BTService) -> c
+    void access$4(com.naruto.tpms.app.BTService) -> d
+    void access$5$7ad56fb(com.naruto.tpms.app.BTService) -> e
+com.naruto.tpms.app.BTService$ConnectThread -> com.naruto.tpms.app.b:
+    android.bluetooth.BluetoothSocket mSocket -> b
+    android.bluetooth.BluetoothDevice mDevice -> c
+    com.naruto.tpms.app.BTService this$0 -> a
+    void run() -> run
+    void cancel() -> a
+com.naruto.tpms.app.BTService$ConnectedThread -> com.naruto.tpms.app.c:
+    android.bluetooth.BluetoothSocket mSocket -> b
+    java.io.OutputStream mOutputStream -> c
+    java.io.InputStream mInputStream -> d
+    com.naruto.tpms.app.BTService this$0 -> a
+    void run() -> run
+    boolean sendMsg(byte[]) -> a
+    void cancel() -> a
+com.naruto.tpms.app.BootReceiver -> com.naruto.tpms.app.BootReceiver:
+    android.os.Handler mHandler -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.naruto.tpms.app.BootReceiver$1 -> com.naruto.tpms.app.d:
+    com.naruto.tpms.app.BootReceiver this$0 -> a
+    void dispatchMessage(android.os.Message) -> dispatchMessage
+com.naruto.tpms.app.CoreBtService -> com.naruto.tpms.app.CoreBtService:
+    android.bluetooth.BluetoothAdapter bAdapter -> d
+    android.bluetooth.BluetoothDevice device -> e
+    android.content.SharedPreferences pref -> f
+    com.naruto.tpms.app.BTService mService -> g
+    int MAX_RETRY_COUNT -> h
+    int retryCount -> i
+    android.os.Vibrator vibrator -> j
+    com.naruto.tpms.app.bean.TireData[] tireDataArr -> k
+    double highPressure -> a
+    double lowPressure -> b
+    double highTemprature -> c
+    android.app.PendingIntent contentIntent -> l
+    android.widget.RemoteViews contentView -> m
+    android.app.Notification mNotification -> n
+    java.lang.String[] tireNames -> o
+    java.lang.String resRunning -> p
+    android.os.PowerManager$WakeLock mWakeLock -> q
+    boolean isAlarmOn -> r
+    android.os.Handler mHandler -> s
+    android.content.BroadcastReceiver myReceiver -> t
+    void onCreate() -> onCreate
+    void onDestroy() -> onDestroy
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void doConnect() -> e
+    void disConnect() -> f
+    void updateSettings() -> g
+    void parseData() -> a
+    void notification(java.lang.String,boolean) -> a
+    void notifyConnected(android.bluetooth.BluetoothDevice) -> a
+    void notifyConnecting() -> b
+    void notifyConnectFail() -> c
+    void notifyConnectLost() -> d
+    void notifyRead(byte[]) -> a
+    void notifyToast(java.lang.String) -> a
+    android.os.Handler access$0(com.naruto.tpms.app.CoreBtService) -> a
+    void access$1(com.naruto.tpms.app.CoreBtService,int) -> a
+    void access$2(com.naruto.tpms.app.CoreBtService,android.bluetooth.BluetoothDevice) -> a
+    android.bluetooth.BluetoothDevice access$3(com.naruto.tpms.app.CoreBtService) -> b
+    java.lang.String access$4(com.naruto.tpms.app.CoreBtService) -> c
+    void access$5$2ded4e69(com.naruto.tpms.app.CoreBtService,java.lang.String) -> a
+    com.naruto.tpms.app.BTService access$6(com.naruto.tpms.app.CoreBtService) -> d
+    int access$7(com.naruto.tpms.app.CoreBtService) -> e
+    void access$8(com.naruto.tpms.app.CoreBtService) -> f
+    void access$9(com.naruto.tpms.app.CoreBtService) -> g
+    com.naruto.tpms.app.bean.TireData[] access$10(com.naruto.tpms.app.CoreBtService) -> h
+    void access$11(com.naruto.tpms.app.CoreBtService) -> i
+com.naruto.tpms.app.CoreBtService$1 -> com.naruto.tpms.app.e:
+    com.naruto.tpms.app.CoreBtService this$0 -> a
+    void dispatchMessage(android.os.Message) -> dispatchMessage
+com.naruto.tpms.app.CoreBtService$2 -> com.naruto.tpms.app.f:
+    com.naruto.tpms.app.CoreBtService this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.naruto.tpms.app.LanguageChangedReceiver -> com.naruto.tpms.app.LanguageChangedReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.naruto.tpms.app.activity.BaseActivity -> com.naruto.tpms.app.activity.BaseActivity:
+    android.view.View title_bar -> a
+    android.widget.TextView tv_title -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void setContentView(int) -> setContentView
+    void setTitle(java.lang.CharSequence) -> setTitle
+    android.view.View getTitleBar() -> a
+    void onClick(android.view.View) -> onClick
+com.naruto.tpms.app.activity.EditActivity -> com.naruto.tpms.app.activity.EditActivity:
+    int mode -> a
+    int checkedId -> b
+    int checkedWhich -> c
+    int studyingWitch -> d
+    java.lang.String preTitle -> e
+    android.app.ProgressDialog pDialog -> f
+    com.naruto.tpms.app.weight.LoadingDialog mLoadingDialog -> g
+    android.widget.TextView[] tv_tireIdArr -> h
+    android.widget.TextView[] tv_tireStateArr -> i
+    android.widget.RelativeLayout[] rl_boxArr -> j
+    android.os.Handler mHandler -> k
+    android.content.BroadcastReceiver myReceiver -> l
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onStart() -> onStart
+    void onPause() -> onPause
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onBackPressed() -> onBackPressed
+    void queryTireId() -> b
+    void exitStudy() -> c
+    void onClick(android.view.View) -> onClick
+    void doStudy(int) -> a
+    void doSwitch(int,int) -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    void onCancel(android.content.DialogInterface) -> onCancel
+    java.lang.String access$0(com.naruto.tpms.app.activity.EditActivity) -> a
+    com.naruto.tpms.app.weight.LoadingDialog access$1(com.naruto.tpms.app.activity.EditActivity) -> b
+    void access$2(com.naruto.tpms.app.activity.EditActivity) -> c
+    int access$3(com.naruto.tpms.app.activity.EditActivity) -> d
+    void access$4$17a16165(com.naruto.tpms.app.activity.EditActivity) -> e
+    android.app.ProgressDialog access$5(com.naruto.tpms.app.activity.EditActivity) -> f
+    android.widget.TextView[] access$6(com.naruto.tpms.app.activity.EditActivity) -> g
+    android.widget.RelativeLayout[] access$7(com.naruto.tpms.app.activity.EditActivity) -> h
+    void access$8$17a16165(com.naruto.tpms.app.activity.EditActivity) -> i
+    void access$9$17a16165(com.naruto.tpms.app.activity.EditActivity) -> j
+    android.widget.TextView[] access$10(com.naruto.tpms.app.activity.EditActivity) -> k
+    android.os.Handler access$11(com.naruto.tpms.app.activity.EditActivity) -> l
+    int access$12(com.naruto.tpms.app.activity.EditActivity) -> m
+    int access$13(com.naruto.tpms.app.activity.EditActivity) -> n
+com.naruto.tpms.app.activity.EditActivity$1 -> com.naruto.tpms.app.activity.a:
+    com.naruto.tpms.app.activity.EditActivity this$0 -> a
+    void dispatchMessage(android.os.Message) -> dispatchMessage
+com.naruto.tpms.app.activity.EditActivity$2 -> com.naruto.tpms.app.activity.b:
+    com.naruto.tpms.app.activity.EditActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.naruto.tpms.app.activity.EditActivity$3 -> com.naruto.tpms.app.activity.c:
+    com.naruto.tpms.app.activity.EditActivity this$0 -> a
+    int val$resId -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.naruto.tpms.app.activity.EditActivity$4 -> com.naruto.tpms.app.activity.d:
+    com.naruto.tpms.app.activity.EditActivity this$0 -> a
+    int val$newCheckedWitch -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.naruto.tpms.app.activity.MainActivity -> com.naruto.tpms.app.activity.MainActivity:
+    android.widget.TextView[] tv_alarm_arr -> a
+    com.naruto.tpms.app.weight.LoadingDialog mLoadingDialog -> b
+    android.widget.GridView gv_tireData -> c
+    android.content.DialogInterface menuDialog -> d
+    android.widget.ImageView iv_title_left -> e
+    android.widget.Button btn_title_left -> f
+    android.widget.ImageButton ib_mute -> g
+    android.content.SharedPreferences sharedPreferences -> h
+    java.lang.String defaultTitle -> i
+    com.naruto.tpms.app.bean.TireData[] tireDataArr -> j
+    com.naruto.tpms.app.adapter.TireWatchAdapter mGridAdapter -> k
+    int pressureUnitIndex -> l
+    int temperatureUnitIndex -> m
+    boolean isAlarmOn -> n
+    android.os.Handler mHandler -> o
+    android.content.BroadcastReceiver myReceiver -> p
+    void onCreate(android.os.Bundle) -> onCreate
+    void refreshView() -> b
+    void onResume() -> onResume
+    void onStart() -> onStart
+    void onPause() -> onPause
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+    void onBackPressed() -> onBackPressed
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void doConnect() -> c
+    void onClick(android.view.View) -> onClick
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    void onClick(android.content.DialogInterface,int) -> onClick
+    android.os.Handler access$0(com.naruto.tpms.app.activity.MainActivity) -> a
+    java.lang.String access$1(com.naruto.tpms.app.activity.MainActivity) -> b
+    com.naruto.tpms.app.weight.LoadingDialog access$2(com.naruto.tpms.app.activity.MainActivity) -> c
+    android.widget.Button access$3(com.naruto.tpms.app.activity.MainActivity) -> d
+    com.naruto.tpms.app.bean.TireData[] access$4(com.naruto.tpms.app.activity.MainActivity) -> e
+    void access$5(com.naruto.tpms.app.activity.MainActivity) -> f
+com.naruto.tpms.app.activity.MainActivity$1 -> com.naruto.tpms.app.activity.e:
+    com.naruto.tpms.app.activity.MainActivity this$0 -> a
+    void dispatchMessage(android.os.Message) -> dispatchMessage
+com.naruto.tpms.app.activity.MainActivity$2 -> com.naruto.tpms.app.activity.f:
+    com.naruto.tpms.app.activity.MainActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.naruto.tpms.app.activity.ScanActivity -> com.naruto.tpms.app.activity.ScanActivity:
+    android.bluetooth.BluetoothAdapter bAdapter -> a
+    com.naruto.tpms.app.adapter.BluetoothDeviceAdapter deviceAdapter -> b
+    com.naruto.tpms.app.BTService mService -> c
+    java.lang.String temp_bt_name -> d
+    android.content.SharedPreferences pref -> e
+    android.widget.Button btn_refresh -> f
+    android.widget.ProgressBar pb_loading -> g
+    android.app.ProgressDialog pDialog -> h
+    android.os.Handler mHandler -> i
+    android.content.BroadcastReceiver mReceiver -> j
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    void onDestroy() -> onDestroy
+    void doDiscovery() -> b
+    void startDiscovery() -> c
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    android.app.ProgressDialog access$0(com.naruto.tpms.app.activity.ScanActivity) -> a
+    java.lang.String access$1(com.naruto.tpms.app.activity.ScanActivity) -> b
+    com.naruto.tpms.app.adapter.BluetoothDeviceAdapter access$2(com.naruto.tpms.app.activity.ScanActivity) -> c
+    android.widget.Button access$3(com.naruto.tpms.app.activity.ScanActivity) -> d
+    android.widget.ProgressBar access$4(com.naruto.tpms.app.activity.ScanActivity) -> e
+    com.naruto.tpms.app.BTService access$5(com.naruto.tpms.app.activity.ScanActivity) -> f
+com.naruto.tpms.app.activity.ScanActivity$1 -> com.naruto.tpms.app.activity.g:
+    com.naruto.tpms.app.activity.ScanActivity this$0 -> a
+    void dispatchMessage(android.os.Message) -> dispatchMessage
+com.naruto.tpms.app.activity.ScanActivity$2 -> com.naruto.tpms.app.activity.h:
+    com.naruto.tpms.app.activity.ScanActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.naruto.tpms.app.activity.ScanActivity$3 -> com.naruto.tpms.app.activity.i:
+    com.naruto.tpms.app.activity.ScanActivity this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+com.naruto.tpms.app.activity.SettingActivity -> com.naruto.tpms.app.activity.SettingActivity:
+    android.content.SharedPreferences sharedPreferences -> c
+    android.widget.TextView tv_bluetooth_name -> d
+    android.widget.TextView tv_hp -> e
+    android.widget.TextView tv_lp -> f
+    android.widget.TextView tv_ht -> g
+    com.naruto.tpms.app.weight.MySeekBar sb_high_pressure -> h
+    com.naruto.tpms.app.weight.MySeekBar sb_low_pressure -> i
+    com.naruto.tpms.app.weight.MySeekBar sb_high_temprature -> j
+    int pressureUnitIndex -> a
+    int temperatureUnitIndex -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void updateSettings() -> b
+    void onClick(android.view.View) -> onClick
+    void onDestroy() -> onDestroy
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onClick(android.content.DialogInterface,int) -> onClick
+    void onCheckedChanged(android.widget.RadioGroup,int) -> onCheckedChanged
+    void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+    void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.naruto.tpms.app.activity.WelcomeActivity -> com.naruto.tpms.app.activity.WelcomeActivity:
+    android.os.Handler mHandler -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    android.os.Handler access$0(com.naruto.tpms.app.activity.WelcomeActivity) -> a
+com.naruto.tpms.app.activity.WelcomeActivity$1 -> com.naruto.tpms.app.activity.j:
+    com.naruto.tpms.app.activity.WelcomeActivity this$0 -> a
+    void dispatchMessage(android.os.Message) -> dispatchMessage
+com.naruto.tpms.app.activity.WelcomeActivity$2 -> com.naruto.tpms.app.activity.k:
+    com.naruto.tpms.app.activity.WelcomeActivity this$0 -> a
+    void run() -> run
+com.naruto.tpms.app.adapter.BluetoothDeviceAdapter -> com.naruto.tpms.app.a.a:
+    java.util.Set deviceSet -> a
+    android.view.LayoutInflater inflater -> b
+    android.content.Context ctx -> c
+    android.content.res.Resources res -> d
+    android.bluetooth.BluetoothDevice selectDevice -> e
+    void add(com.naruto.tpms.app.bean.DeviceInfo) -> a
+    void clear() -> a
+    int getViewTypeCount() -> getViewTypeCount
+    int getItemViewType(int) -> getItemViewType
+    com.naruto.tpms.app.bean.DeviceInfo get(int) -> a
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    void setSelectDevice(android.bluetooth.BluetoothDevice) -> a
+    android.bluetooth.BluetoothDevice getSelectDevice() -> b
+com.naruto.tpms.app.adapter.BluetoothDeviceAdapter$ViewHolder -> com.naruto.tpms.app.a.b:
+    android.widget.ImageView icon -> a
+    android.widget.TextView name -> b
+    android.widget.TextView address -> c
+    android.widget.TextView info -> d
+    android.widget.RadioButton radioBtn -> e
+    com.naruto.tpms.app.adapter.BluetoothDeviceAdapter this$0 -> f
+com.naruto.tpms.app.adapter.TireWatchAdapter -> com.naruto.tpms.app.a.c:
+    android.view.LayoutInflater layoutInflater -> h
+    com.naruto.tpms.app.bean.TireData[] tireDataArr -> i
+    android.widget.GridView mGridView -> j
+    int pressureUnitIndex -> a
+    int temperatureUnitIndex -> b
+    double highPressure -> c
+    double lowPressure -> d
+    double highTemprature -> e
+    android.graphics.drawable.Drawable grid_item_transparent_bg -> f
+    android.graphics.drawable.Drawable grid_item_alarm_bg -> g
+    int orientation -> k
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    int getViewTypeCount() -> getViewTypeCount
+    int getItemViewType(int) -> getItemViewType
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    void setOrientation(int) -> a
+com.naruto.tpms.app.adapter.TireWatchAdapter$ViewHolder -> com.naruto.tpms.app.a.d:
+    android.widget.TextView tv_tire_id -> a
+    android.widget.TextView tv_tire_pressure -> b
+    android.widget.TextView tv_pressure_unit -> c
+    android.widget.TextView tv_tire_temprature -> d
+    android.widget.TextView tv_tire_alarm -> e
+    com.naruto.tpms.app.adapter.TireWatchAdapter this$0 -> f
+com.naruto.tpms.app.bean.DeviceBind -> com.naruto.tpms.app.bean.DeviceBind:
+    int deviceId -> deviceId
+    java.lang.String btMac -> btMac
+    java.lang.String btName -> btName
+com.naruto.tpms.app.bean.DeviceInfo -> com.naruto.tpms.app.bean.a:
+    android.bluetooth.BluetoothDevice device -> a
+    short rssi -> b
+    boolean isDiscovery -> c
+    int hashCode() -> hashCode
+    boolean equals(java.lang.Object) -> equals
+com.naruto.tpms.app.bean.TireData -> com.naruto.tpms.app.bean.b:
+    byte tireNum -> a
+    byte[] tireId -> b
+    double pressure -> c
+    int temperature -> d
+    boolean isLeak -> e
+    boolean isLowBattery -> f
+    boolean isSignalError -> g
+    long lastUpdateTime -> h
+    boolean haveAlarm -> i
+com.naruto.tpms.app.comm.AppContext -> com.naruto.tpms.app.comm.AppContext:
+    com.naruto.tpms.app.comm.AppContext instance -> a
+    void onCreate() -> onCreate
+    com.naruto.tpms.app.comm.AppContext getInstance() -> a
+com.naruto.tpms.app.comm.AppManager -> com.naruto.tpms.app.comm.a:
+    java.util.Stack activityStack -> a
+    com.naruto.tpms.app.comm.AppManager instance -> b
+    com.naruto.tpms.app.comm.AppManager getAppManager() -> a
+    void addActivity(android.app.Activity) -> a
+    void finishActivity(android.app.Activity) -> b
+    void finishAllActivity() -> b
+    void AppExit(android.content.Context) -> a
+com.naruto.tpms.app.comm.Commend -> com.naruto.tpms.app.comm.b:
+com.naruto.tpms.app.comm.Commend$TX -> com.naruto.tpms.app.comm.c:
+    byte[] QUERY_TIRE_ID -> a
+    byte[] QUIT_STUDY -> b
+    byte[] SET_MUTE_ON -> c
+    byte[] SET_MUTE_OFF -> d
+com.naruto.tpms.app.comm.Constants -> com.naruto.tpms.app.comm.d:
+    byte[] TIRE_NUMS -> a
+    java.lang.String[] TIRE_NAMES -> b
+    byte[] SWITCH_CMD -> c
+    java.util.Locale[] LOCALE_ARR -> d
+com.naruto.tpms.app.comm.util.CommUtil -> com.naruto.tpms.app.comm.a.a:
+    com.naruto.tpms.app.weight.TipsToast tipsToast -> a
+    java.lang.String[] pressureUnits -> b
+    java.lang.String[] temperatureUnits -> c
+    java.text.DecimalFormat pressureFormater -> d
+    java.text.DecimalFormat pressurekPaFormater -> e
+    java.text.DecimalFormat tempratureFormater -> f
+    byte getCheckByte$1cf967b8(byte[],int) -> a
+    java.lang.String byteToBinaryString(byte) -> a
+    void showTips(int,int) -> a
+    void showTips(int,java.lang.String) -> a
+    java.lang.String getPressure(double,int) -> a
+    java.lang.String getPressureWithUnit(double,int) -> b
+    java.lang.String getTemperatureWithUnit(double,int) -> c
+    java.lang.String byte2HexStr(byte[]) -> a
+    int getTireIndexByTireNum(byte) -> b
+com.naruto.tpms.app.comm.util.MusicUtil -> com.naruto.tpms.app.comm.a.b:
+    android.media.MediaPlayer mp -> a
+    void play$1a54e370(android.content.Context) -> a
+    boolean isPlaying() -> a
+    void stop$faab20d() -> b
+com.naruto.tpms.app.weight.FrameAnimationController -> com.naruto.tpms.app.weight.a:
+    android.os.Handler mHandler -> a
+    void requestAnimationFrame(java.lang.Runnable) -> a
+com.naruto.tpms.app.weight.FrameAnimationController$AnimationHandler -> com.naruto.tpms.app.weight.b:
+    void handleMessage(android.os.Message) -> handleMessage
+com.naruto.tpms.app.weight.LoadingDialog -> com.naruto.tpms.app.weight.c:
+    android.widget.TextView tips_loading_msg -> a
+    java.lang.String message -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void setText(java.lang.String) -> a
+com.naruto.tpms.app.weight.MarqueeTextView -> com.naruto.tpms.app.weight.MarqueeTextView:
+    boolean isFocused() -> isFocused
+com.naruto.tpms.app.weight.MySeekBar -> com.naruto.tpms.app.weight.MySeekBar:
+    void setProgress(int) -> setProgress
+com.naruto.tpms.app.weight.SwitchButton -> com.naruto.tpms.app.weight.SwitchButton:
+    android.graphics.Paint mPaint -> a
+    android.view.ViewParent mParent -> b
+    android.graphics.Bitmap mBottom -> c
+    android.graphics.Bitmap mCurBtnPic -> d
+    android.graphics.Bitmap mBtnPressed -> e
+    android.graphics.Bitmap mBtnNormal -> f
+    android.graphics.Bitmap mFrame -> g
+    android.graphics.Bitmap mMask -> h
+    android.graphics.RectF mSaveLayerRectF -> i
+    android.graphics.PorterDuffXfermode mXfermode -> j
+    float mFirstDownY -> k
+    float mFirstDownX -> l
+    float mRealPos -> m
+    float mBtnPos -> n
+    float mBtnOnPos -> o
+    float mBtnOffPos -> p
+    float mMaskWidth -> q
+    float mMaskHeight -> r
+    float mBtnWidth -> s
+    float mBtnInitPos -> t
+    int mClickTimeout -> u
+    int mTouchSlop -> v
+    int MAX_ALPHA -> w
+    int mAlpha -> x
+    boolean mChecked -> y
+    boolean mBroadcasting -> z
+    boolean mTurningOn -> A
+    com.naruto.tpms.app.weight.SwitchButton$PerformClick mPerformClick -> B
+    android.widget.CompoundButton$OnCheckedChangeListener mOnCheckedChangeListener -> C
+    android.widget.CompoundButton$OnCheckedChangeListener mOnCheckedChangeWidgetListener -> D
+    boolean mAnimating -> E
+    float VELOCITY -> F
+    float mVelocity -> G
+    float EXTENDED_OFFSET_Y -> H
+    float mExtendOffsetY -> I
+    float mAnimationPosition -> J
+    float mAnimatedVelocity -> K
+    void setEnabled(boolean) -> setEnabled
+    boolean isChecked() -> isChecked
+    void toggle() -> toggle
+    void setCheckedDelayed(boolean) -> a
+    void setChecked(boolean) -> setChecked
+    void setOnCheckedChangeListener(android.widget.CompoundButton$OnCheckedChangeListener) -> setOnCheckedChangeListener
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    boolean performClick() -> performClick
+    float getRealPos(float) -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void onMeasure(int,int) -> onMeasure
+    void startAnimation(boolean) -> b
+    boolean access$0(com.naruto.tpms.app.weight.SwitchButton) -> a
+    void access$1(com.naruto.tpms.app.weight.SwitchButton) -> b
+com.naruto.tpms.app.weight.SwitchButton$1 -> com.naruto.tpms.app.weight.d:
+    com.naruto.tpms.app.weight.SwitchButton this$0 -> a
+    boolean val$checked -> b
+    void run() -> run
+com.naruto.tpms.app.weight.SwitchButton$PerformClick -> com.naruto.tpms.app.weight.e:
+    com.naruto.tpms.app.weight.SwitchButton this$0 -> a
+    void run() -> run
+com.naruto.tpms.app.weight.SwitchButton$SwitchAnimation -> com.naruto.tpms.app.weight.f:
+    com.naruto.tpms.app.weight.SwitchButton this$0 -> a
+    void run() -> run
+com.naruto.tpms.app.weight.TipsToast -> com.naruto.tpms.app.weight.g:
+    com.naruto.tpms.app.weight.TipsToast makeText$34610756(android.content.Context,java.lang.CharSequence) -> a
+    com.naruto.tpms.app.weight.TipsToast makeText$2bd28991(android.content.Context,int) -> a
+    void setIcon(int) -> a
+    void setText(java.lang.CharSequence) -> setText

@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_left_front"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edit_item_bg"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:id="@+id/btn_left_front"
+                    style="@style/lab_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/l_f_tire"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_left_front_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/btn_left_front"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/tv_left_front_sate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_left_front"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_right_front"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edit_item_bg"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:id="@+id/btn_right_front"
+                    style="@style/lab_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/r_f_tire"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_right_front_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/btn_right_front"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/tv_right_front_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_right_front"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_left_rear"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:id="@+id/btn_left_rear"
+                    style="@style/lab_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/l_r_tire"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_left_rear_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/btn_left_rear"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/tv_left_rear_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_left_rear"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_right_rear"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edit_item_bg"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:id="@+id/btn_right_rear"
+                    style="@style/lab_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/r_r_tire"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_right_rear_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/btn_right_rear"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/tv_right_rear_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_right_rear"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="#5FFF" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_centerVertical="true"
+        android:background="#5FFF" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/car" />
+
+</RelativeLayout>

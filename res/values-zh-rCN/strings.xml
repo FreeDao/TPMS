@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="empty"></string>
+    <string name="app_name">胎压监测</string>
+    <string name="app_version">V1.2.1</string>
+    <string name="menu">菜单</string>
+    <string name="action_settings">设置</string>
+    <string name="app_summary">TPMS</string>
+    <string name="bind_bluetooth">绑定蓝牙设备</string>
+    <string name="alarm_voice_switch">告警音开关</string>
+    <string name="keep_screen_switch">监测时屏幕常亮</string>
+    <string name="language_setting">语言设置</string>
+    <string name="pressure_unit">压力单位</string>
+    <string name="temperature_unit">温度单位</string>
+    <string name="language_chinese">中文</string>
+    <string name="pressure_unit_kpa">KPa</string>
+    <string name="pressure_unit_bar">Bar</string>
+    <string name="pressure_unit_psi">Psi</string>
+    <string name="pressure_unit_kg">kg</string>
+    <string name="temperature_unit_c">°C</string>
+    <string name="temperature_unit_f">°F</string>
+    <string name="no_bluetooth_bind">未绑定</string>
+    <string name="warn_on">告警已打开</string>
+    <string name="setting_language">设置语言</string>
+    <string name="comm_ok">确定</string>
+    <string name="comm_back">返回</string>
+    <string name="comm_cancel">取消</string>
+    <string name="comm_loading">加载中&#8230;&#8230;&#8230;</string>
+    <string name="high_pressure">压力告警上限</string>
+    <string name="low_pressure">压力告警下限</string>
+    <string name="high_temprature">温度告警上限</string>
+    
+    
+    <string name="msg_tire_switch_success">轮胎交换成功</string>
+    <string name="msg_tire_study_success">%1$sID学习成功</string>
+    <string name="msg_press_back_again_to_exit">再按一次退出</string>
+    <string name="msg_state_connected">(已连接)</string>
+    <string name="msg_state_connecting">(正在连接&#8230;)</string>
+    <string name="msg_state_connect_fail">(连接失败)</string>
+    <string name="msg_state_connect_lost">(连接已断开)</string>
+    <string name="msg_connecting">正在连接&#8230;</string>
+    <string name="msg_studying">正在学习&#8230;</string>
+    <string name="msg_study_cancel">已取消学习</string>
+    <string name="msg_switching">正在交换&#8230;</string>
+    <string name="msg_study_command_send_fail">发送学习指令失败</string>
+    <string name="msg_study_success">ID学习成功</string>
+    <string name="msg_switch_success">轮胎交换成功</string>
+    <string name="tips_connect_fail">连接失败,点击标题栏重试</string>
+    <string name="tips_connect_lost">连接已断开,点击标题栏重连</string>
+    <string name="tips_click_tire_start_study">点击对应的轮胎开始学习</string>
+    <string name="tips_click_tire_start_switch">选择两个轮胎进行交换</string>
+    <string name="mode_study">ID学习模式</string>
+    <string name="mode_switch">交换模式</string>
+    <string name="mode_watch">监测模式</string>
+    <string name="msg_choose_mode">请选择要进行的操作</string>
+    <string name="item_study">ID学习模式</string>
+    <string name="item_switch">交换模式</string>
+    <string name="tip_alarm_on">告警音已打开</string>
+    <string name="tip_alarm_off">告警音已关闭</string>
+    <string name="alarm_leak">漏气</string>
+    <string name="alarm_low_battery">电量低</string>
+    <string name="alarm_signal_error">无信号</string>
+    <string name="alarm_high_pressure">高压</string>
+    <string name="alarm_low_pressure">低压</string>
+    <string name="alarm_high_temprature">高温</string>
+    <string name="msg_want_switch">是否交换%1$s和%2$s?</string>
+    <string name="give_up_study">放弃学习</string>
+    <string name="msg_connect_success">连接成功</string>
+    <string name="msg_studying_tire_id">正在学习轮胎ID,请在4分钟内给%1$s充气.</string>
+    <string name="visible">可见,</string>
+    <string name="paired">已配对</string>
+    <string name="unpaired">未配对</string>
+    <string name="lab_signal_strength">,信号强度:</string>
+    <string name="signal_strong">较强</string>
+    <string name="signal_general">一般</string>
+    <string name="signal_weak">较弱</string>
+    <string name="do_not_bind_device">不绑定蓝牙设备</string>
+    <string name="re_scan_devices">重新扫描周围的蓝牙设备</string>
+    <string name="l_f_tire">左前轮</string>
+    <string name="r_f_tire">右前轮</string>
+    <string name="l_r_tire">左后轮</string>
+    <string name="r_r_tire">右后轮</string>
+    <string name="msg_tips">提示</string>
+    <string name="ask_to_bind">还未绑定蓝牙设备,是否现在绑定蓝牙设备?</string>
+    <string name="go_to_bind">现在绑定</string>
+    <string name="do_not_bind">暂不绑定</string>
+    <string name="auto_boot">自启动</string>
+
+    <!-- <string name="action_control">控制</string> -->
+    <!-- 20140218新增 -->
+    <string name="exit">退出</string>
+    <string name="msg_run_in_background">TPMS后台运行中,若要完全退出请按菜单选择\'退出\'</string>
+    <string name="msg_device_not_bind">蓝牙设备未绑定</string>
+    <string name="msg_bluetooth_closed">蓝牙未打开</string>
+    <string name="msg_n_tire_alarming">个轮胎有告警</string>
+    <string name="msg_connect_fail">连接失败</string>
+    <string name="msg_connect_lost">连接丢失</string>
+    <string name="msg_tpms_running">TPMS正在运行</string>
+     <!-- 20140218新增end-->
+
+    <string-array name="local_names">
+        <item>跟随系统</item>
+        <item>简体中文</item>
+        <item>繁體中文</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="tires_names">
+        <item>左前轮</item>
+        <item>右前轮</item>
+        <item>左后轮</item>
+        <item>右后轮</item>
+    </string-array>
+
+</resources>
